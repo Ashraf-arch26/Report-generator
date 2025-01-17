@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Report Generator</title>
+    <link rel="stylesheet" href="/Personal project/Report gen.CSS">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Voice Report Generator</h1>
+        <p>Transform your daily activities into structured reports effortlessly.</p>
+    </header>
+
+    <!-- Language Selection Section -->
+    <section id="language-selection">
+        <h2>Select Language</h2>
+        <select id="language">
+            <option value="en-US">English</option>
+            <option value="es-ES">Spanish</option>
+            <option value="fr-FR">French</option>
+            <option value="de-DE">German</option>
+            <!-- Add more languages as needed -->
+        </select>
+    </section>
+
+    <!-- Voice Input Section -->
+    <section id="voice-input">
+        <h2>Describe Your Day</h2>
+        <button id="start-btn">Start Recording</button>
+        <button id="stop-btn" disabled>Stop Recording</button>
+        <div id="wave-animation"></div>
+        <textarea id="transcription" placeholder="Your text will appear here..." readonly></textarea>
+    </section>
+
+    <!-- Generate Report Section -->
+    <section id="generate-report">
+        <h2>Generate Report</h2>
+        <button id="generate-btn">Generate Report</button>
+        <textarea id="report-output" placeholder="Your generated report will appear here..." readonly></textarea>
+        <button id="download-btn" disabled>Download Report</button>
+    </section>
+
+    <script src="/Personal project/Report gen.js"></script>
+</body>
+</html>
